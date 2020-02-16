@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'java-library'
+}
+
+group 'eu.kronick.spectatorplus'
+version '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+sourceCompatibility = 1.8
+
+apply from: 'spigotmc.gradle'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
